@@ -68,11 +68,17 @@ Take note that that these groups are essential to destablish formatting. For exa
 ([a-z\.]{2,6}) com
 
 
-
-
 ### Bracket Expressions
 
-### Greedy and Lazy Match
+There are three bracket expressions within the regex example being given. These brackets enclose the characters that are to be matched.
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ 
+
+[a-z0-9_\.-]  -  indicates any letters a-z and any digits 0-9 excepted an unlimited number of times.
+[\da-z\.-] - indicates any digit and a-z
+[a-z\.] -  indicateds any character a-z
+
+
 
 ## Author
 
