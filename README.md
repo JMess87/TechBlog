@@ -4,7 +4,11 @@ This tutorial is to explain the structure, components and purpose of regular exp
 
 ## Summary
 
-The regex that I chose is in matching an email. The regex syntax for matching an email is – /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ . During this tutorial I will break down this regex to help understand what it is used for and what each portion fo the expression does.
+The regex that I chose is in matching an email. The regex syntax for matching an email is – 
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+During this tutorial I will break down this regex to help understand what it is used for and what each portion fo the expression does.
 
 ## Table of Contents
 
@@ -36,7 +40,35 @@ There are few quantifiers here,
 
 ### Character Classes
 
-### Grouping and Capturing
+The character classes used in this regex expression are: 
+ ( \d )  which equates to numerical digit 0-9.
+ ( . ) period, which is the wildcard character that excepts any character except for \n.
+
+
+### Grouping 
+
+Grouping is indicated by the use of () in this example there are three instances of () being used.
+
+([a-z0-9_\.-]+)
+
+([\da-z\.-]+)
+
+([a-z\.]{2,6})
+
+Take note that that these groups are essential to destablish formatting. For example my email address. jennilee.messenger@gmail.com. Would be broken down as follows using the grouping to identify the information within the formatted email address.
+
+([a-z0-9_\.-]+) jennilee.messenger
+
+@
+
+([\da-z\.-]+) gmail 
+
+.
+
+([a-z\.]{2,6}) com
+
+
+
 
 ### Bracket Expressions
 
